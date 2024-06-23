@@ -19,7 +19,13 @@ let package = Package(
             name: "SocketRocket",
             path: "SocketRocket",
             cSettings: [
-                .headerSearchPath("Internal/**"),
+                .headerSearchPath("Internal/"),
+                .headerSearchPath("Internal/Delegate"),
+                .headerSearchPath("Internal/IOConsumer"),
+                .headerSearchPath("Internal/Proxy"),
+                .headerSearchPath("Internal/RunLoop"),
+                .headerSearchPath("Internal/Security"),
+                .headerSearchPath("Internal/Utilities"),
             ]),
     ]
 )
